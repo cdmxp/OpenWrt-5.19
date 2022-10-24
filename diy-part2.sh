@@ -12,5 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_generate
-rm -rf feeds/packages/lang/golang
-svn export https://github.com/sbwml/packages_lang_golang/trunk feeds/packages/lang/golang
+sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=6.0/g' ./target/linux/x86/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.0/g' ./target/linux/x86/Makefile
