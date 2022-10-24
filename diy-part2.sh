@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# 修改openwrt登陆地址,把下面的192.168.6.1修改成你想要的就可以了
+# 修改openwrt登陆地址,把下面的192.168.99.1修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_generate
 # 修改内核6.0
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.0/g' ./target/linux/x86/Makefile
